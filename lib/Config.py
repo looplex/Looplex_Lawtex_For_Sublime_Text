@@ -86,7 +86,7 @@ class Config:
         if not os.path.exists( folderPath ):
             os.makedirs( folderPath )
 
-        return os.path.join(os.path.expanduser('~'), Config.mainDataFolder, Config.logsDataSubFolder)
+        return folderPath
 
     def retrieve_database_folder_windows() :
 
@@ -95,4 +95,4 @@ class Config:
         if not os.path.exists( folderPath ):
             os.makedirs( folderPath )
 
-        return os.path.join(os.path.expanduser('~'), Config.mainDataFolder, Config.databaseDataSubFolder)
+        return folderPath
