@@ -63,33 +63,28 @@ class Config:
 
         folderPath = os.path.join( os.getenv("HOME"), Config.mainDataFolder, Config.logsDataSubFolder )
 
-        if not os.path.exists( folderPath ):
-            os.mkdir( folderPath )
-
-        return folderPath
+        return Config.retrieve_folder( folderPath )
 
     def retrieve_database_folder_linux() :
 
-        try :
-            os.mkdir(os.path.join(os.getenv("HOME"), Config.mainDataFolder, Config.databaseDataSubFolder))
+        folderPath = os.path.join( os.getenv("HOME"), Config.mainDataFolder, Config.databaseDataSubFolder )
 
-        except OSError as error:
-            pass
-
-        return os.path.join(os.getenv("HOME"), Config.mainDataFolder, Config.databaseDataSubFolder)
+        return Config.retrieve_folder( folderPath )
 
     def retrieve_logs_folder_windows() :
 
         folderPath = os.path.join(os.path.expanduser('~'), Config.mainDataFolder, Config.logsDataSubFolder)
 
-        if not os.path.exists( folderPath ):
-            os.makedirs( folderPath )
-
-        return folderPath
+        return Config.retrieve_folder( folderPath )
 
     def retrieve_database_folder_windows() :
 
         folderPath = os.path.join(os.path.expanduser('~'), Config.mainDataFolder, Config.databaseDataSubFolder)
+
+        return Config.retrieve_folder( folderPath )
+
+    @staticmethod
+    def retrieve_folder( folderPath ):
 
         if not os.path.exists( folderPath ):
             os.makedirs( folderPath )
