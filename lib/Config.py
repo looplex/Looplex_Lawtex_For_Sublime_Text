@@ -9,7 +9,7 @@ class Config:
 
     pluginJar = 'looplex_lawtex_plugin-1.5.1.jar'
 
-    mainDataFolder = 'Looplex_Lawtex_For_Sublime_Text'
+    mainDataFolder = 'Looplex_Lawtex_Plugin'
     logsDataSubFolder = 'logs'
     databaseDataSubFolder = 'local_database'
 
