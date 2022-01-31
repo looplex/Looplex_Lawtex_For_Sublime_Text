@@ -2,11 +2,11 @@ import sublime
 import sublime_plugin
 import os
 from Default.exec import ExecCommand
-from Looplex_Lawtex_ST3_Plugin.lib.Config import Config
-from Looplex_Lawtex_ST3_Plugin.lib.Validate_lawtex_file import Validate_lawtex_file
-from Looplex_Lawtex_ST3_Plugin.lib.Upload_lawtex_template import Upload_lawtex_template
-from Looplex_Lawtex_ST3_Plugin.lib.Change_login_context import Change_login_context
-from Looplex_Lawtex_ST3_Plugin.lib.Open_folder import Open_folder
+from Looplex_Lawtex_For_Sublime_Text.lib.Config import Config
+from Looplex_Lawtex_For_Sublime_Text.lib.Validate_lawtex_file import Validate_lawtex_file
+from Looplex_Lawtex_For_Sublime_Text.lib.Upload_lawtex_template import Upload_lawtex_template
+from Looplex_Lawtex_For_Sublime_Text.lib.Change_login_context import Change_login_context
+from Looplex_Lawtex_For_Sublime_Text.lib.Open_folder import Open_folder
 
 class Validate_lawtex_fileCommand(ExecCommand) :
 
