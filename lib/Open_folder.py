@@ -1,6 +1,6 @@
 import sublime
 import os
-from Looplex_Lawtex_ST3_Plugin.lib.Config import Config
+from Looplex_Lawtex_For_Sublime_Text.lib.Config import Config
 
 class Open_folder() :
 
