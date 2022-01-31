@@ -2,85 +2,69 @@ import sublime
 import subprocess
 import re
 import os
-from Looplex_Lawtex_ST3_Plugin.lib.ZipFile import ZipFile
 
 class Config:
 
     pluginName = 'Looplex_Lawtex_ST3_Plugin'
 
-    pluginJar = 'looplex_lawtex_plugin-1.4.4.jar'
-
-    pluginExe = 'looplex_lawtex_plugin-1.4.4.exe'
+    pluginJar = 'looplex_lawtex_plugin-1.5.1.jar'
 
     mainDataFolder = 'Looplex_Lawtex_ST3_Plugin'
     logsDataSubFolder = 'logs'
     databaseDataSubFolder = 'local_database'
 
-    def check_plugin_jar_dependencies():
-
-        if not os.path.exists( Config.retrieve_jar_dependency_filepath() ):
-
-            with ZipFile( os.path.dirname( os.path.dirname(__file__) ), 'r') as zip_obj:
-
-                zip_obj.extract('jar/' + Config.pluginJar, os.path.join(sublime.packages_path(), Config.pluginName))
-
-    def retrieve_jar_dependency_filepath() :
-
-        return os.path.join(sublime.packages_path(), Config.pluginName, 'jar', Config.pluginJar)
-
-    def check_plugin_exe_dependencies():
-
-        if not os.path.exists( Config.retrieve_exe_dependency_filepath() ):
-
-            with ZipFile( os.path.dirname( os.path.dirname(__file__) ), 'r') as zip_obj:
-
-                zip_obj.extract('exe/' + Config.pluginExe, os.path.join(sublime.packages_path(), Config.pluginName))
-
-    def retrieve_exe_dependency_filepath() :
-
-        return os.path.join(sublime.packages_path(), Config.pluginName, 'exe', Config.pluginExe)
-
     def check_if_in_lawtex_file(view):
 
-        if re.search(r"\.lawtex$", view.file_name()):
+        try :
 
-            if not view.is_dirty():
-                return True
-            else:
-                sublime.message_dialog("There are unsaved changes on your file, please save them or open it unchanged before validating it.")
-                return False
+            file_name = view.file_name()
 
-        else :
-            sublime.error_message("Rode este comando em um arquivo .lawtex salvo!")
-            return False
+            if file_name is not None:
 
-    def run_jar_dependency_in_background(self, context) :
+                if re.search(r"\.lawtex$", view.file_name()):
+
+                    if not view.is_dirty():
+                        return True
+                    else:
+                        sublime.message_dialog("There are unsaved changes on your file, please save them or open it unchanged before validating it.")
+                        return False
+
+        except TypeError as error:
+            pass
+
+        sublime.error_message("Rode este comando em um arquivo .lawtex salvo!")
+        return False
+
+    @staticmethod
+    def run_jar_dependency_in_background(context) :
 
         if sublime.platform() == "windows":
-            context = context.replace("\\", "\\\\")
-
-        jar_filepath = Config.retrieve_jar_dependency_filepath()
-        exe_filepath = Config.retrieve_exe_dependency_filepath()
-
-        if sublime.platform() == "windows":
-            Config.check_plugin_exe_dependencies()
             CREATE_NO_WINDOW = 0x08000000
-            subprocess.Popen([ exe_filepath, context], creationflags = CREATE_NO_WINDOW)
-
-        elif sublime.platform() == "osx":
-            Config.check_plugin_jar_dependencies()
-            subprocess.Popen([ "java", "-jar", jar_filepath, context ])
+            context = context.replace("\\", "\\\\")
+            win_jar_filepath = Config.retrieve_jar_dependency_filepath( "windows" )
+            win_jre_filepath = Config.retrieve_jre_dependency_filepath( "windows" )
+            subprocess.Popen([ win_jre_filepath, '-jar', win_jar_filepath, context ], creationflags = CREATE_NO_WINDOW )
 
         else :
-            Config.check_plugin_jar_dependencies()
-            subprocess.Popen([ "java", "-jar", jar_filepath, context ])
+            linux_jar_filepath = Config.retrieve_jar_dependency_filepath( "linux" )
+            subprocess.Popen([ "java", "-jar", linux_jar_filepath, context ])
+
+    @staticmethod
+    def retrieve_jar_dependency_filepath( os_name ) :
+
+        return os.path.join(sublime.packages_path(), Config.pluginName, 'jar', os_name, Config.pluginJar)
+
+    @staticmethod
+    def retrieve_jre_dependency_filepath( os_name ) :
+
+        return os.path.join(sublime.packages_path(), Config.pluginName, 'jre', os_name, 'bin', 'java.exe')
 
     def retrieve_logs_folder_linux() :
 
         try :
             os.mkdir(os.path.join(os.getenv("HOME"), Config.mainDataFolder, Config.logsDataSubFolder))
 
-        except OSError:
+        except OSError as error:
             pass
 
         return os.path.join(os.getenv("HOME"), Config.mainDataFolder, Config.logsDataSubFolder)
@@ -90,27 +74,25 @@ class Config:
         try :
             os.mkdir(os.path.join(os.getenv("HOME"), Config.mainDataFolder, Config.databaseDataSubFolder))
 
-        except OSError:
+        except OSError as error:
             pass
 
         return os.path.join(os.getenv("HOME"), Config.mainDataFolder, Config.databaseDataSubFolder)
 
     def retrieve_logs_folder_windows() :
 
-        try :
-            os.mkdir(os.path.join(os.path.expanduser('~'), Config.mainDataFolder, Config.logsDataSubFolder))
+        folderPath = os.path.join(os.path.expanduser('~'), Config.mainDataFolder, Config.logsDataSubFolder)
 
-        except OSError:
-            pass
+        if not os.path.exists( folderPath ):
+            os.makedirs( folderPath )
 
         return os.path.join(os.path.expanduser('~'), Config.mainDataFolder, Config.logsDataSubFolder)
 
     def retrieve_database_folder_windows() :
 
-        try :
-            os.mkdir(os.path.join(os.path.expanduser('~'), 'Documents', Config.mainDataFolder, Config.databaseDataSubFolder))
+        folderPath = os.path.join(os.path.expanduser('~'), Config.mainDataFolder, Config.databaseDataSubFolder)
 
-        except OSError:
-            pass
+        if not os.path.exists( folderPath ):
+            os.makedirs( folderPath )
 
-        return os.path.join(os.path.expanduser('~'), 'Documents', Config.mainDataFolder, Config.databaseDataSubFolder)
+        return os.path.join(os.path.expanduser('~'), Config.mainDataFolder, Config.databaseDataSubFolder)
