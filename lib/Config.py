@@ -7,7 +7,7 @@ class Config:
 
     pluginName = 'Looplex_Lawtex_ST3_Plugin'
 
-    pluginJar = 'looplex_lawtex_plugin-1.5.jar'
+    pluginJar = 'looplex_lawtex_plugin-1.5.1.jar'
 
     mainDataFolder = 'Looplex_Lawtex_ST3_Plugin'
     logsDataSubFolder = 'logs'
