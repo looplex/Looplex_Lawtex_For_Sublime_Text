@@ -61,13 +61,12 @@ class Config:
 
     def retrieve_logs_folder_linux() :
 
-        try :
-            os.mkdir(os.path.join(os.getenv("HOME"), Config.mainDataFolder, Config.logsDataSubFolder))
+        folderPath = os.path.join( os.getenv("HOME"), Config.mainDataFolder, Config.logsDataSubFolder )
 
-        except OSError as error:
-            pass
+        if not os.path.exists( folderPath ):
+            os.mkdir( folderPath )
 
-        return os.path.join(os.getenv("HOME"), Config.mainDataFolder, Config.logsDataSubFolder)
+        return folderPath
 
     def retrieve_database_folder_linux() :
 
