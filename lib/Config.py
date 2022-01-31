@@ -5,11 +5,11 @@ import os
 
 class Config:
 
-    pluginName = 'Looplex_Lawtex_ST3_Plugin'
+    pluginName = 'Looplex_Lawtex_For_Sublime_Text'
 
     pluginJar = 'looplex_lawtex_plugin-1.5.1.jar'
 
-    mainDataFolder = 'Looplex_Lawtex_ST3_Plugin'
+    mainDataFolder = 'Looplex_Lawtex_For_Sublime_Text'
     logsDataSubFolder = 'logs'
     databaseDataSubFolder = 'local_database'
 
