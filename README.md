@@ -1,15 +1,17 @@
-# Looplex Lawtex Plugin - Sublime Text 3
+# Looplex Lawtex For Sublime Text
 
-Este é o plugin da Looplex de suporte ao Lawtex e nossa plataforma para o [Sublime Text 3](https://www.sublimetext.com/3). Ele irá permitir a validação gramatical de arquivos Lawtex, assim como o upload de templates e anexos para a Looplex. 
+Este é o plugin da Looplex de suporte ao Lawtex e nossa plataforma para o [Sublime Text](https://www.sublimetext.com/). Ele permite a validação gramatical de arquivos Lawtex, assim como o upload de templates e anexos para a Looplex. 
 
 ## Instalação
 
-Para o funcionamento do plugin, é necessário a instalação do [Java 8 JRE](https://www.oracle.com/br/java/technologies/javase-jre8-downloads.html). Após isso, basta incluir este repositório ao [Package Control do Sublime Text 3](https://packagecontrol.io/docs/usage). Para mais detalhes, siga o passo-a-passo a seguir:
+Para instalar o plugin,  basta incluir este repositório ao [Package Control do Sublime Text 3](https://packagecontrol.io/docs/usage). Para mais detalhes, siga o passo-a-passo a seguir:
 
-##### Instalar o Java 8 JRE
+##### (MAC e LINUX) Instalar o Java 8 JRE
 
-- Visite https://www.oracle.com/br/java/technologies/javase-jre8-downloads.html 
-- Encontre seu sistema operacional na lista de downloads e baixe a sua versão do Java 8 JRE.
+- Se estiver utilizando o plugin no ***Windows***, *este passo <ins>NÃO</ins> é necessário.*
+- Para o funcionamento do plugin no Mac OS e sistemas Linux, é necessário a instalação do Java 17, seja o runtime (JRE) ou o kit de desenvolvedor (JDK).
+- Você pode obter e instalar um JDK/JRE no site da [Adoptium](https://adoptium.net/), que fornece a distribuição do JDK/JRE do Temurin.
+- Encontre seu sistema operacional na lista de downloads e baixe a sua versão do Java 17 JDK ou JRE.
 - Após terminar o download, rode o executável para instalar o Java (ou extraia os arquivos e efetue sua configuração caso baixe o arquivo compactado).
 
 ##### Instalar o Package Control no Sublime Text 3
@@ -26,7 +28,7 @@ Para o funcionamento do plugin, é necessário a instalação do [Java 8 JRE](ht
   - No canto inferior da janela aparecerá um campo de entrada.
 - Copie e cole o endereço deste repositório no campo de entrada que apareceu, e aperte Enter:
 ```
-https://github.com/looplex/Looplex_Lawtex_ST3_Plugin
+https://github.com/looplex/Looplex_Lawtex_For_Sublime_Text
 ```
 
 ##### Instale o plugin
@@ -34,7 +36,7 @@ https://github.com/looplex/Looplex_Lawtex_ST3_Plugin
 - Abra o menu _'Tools'_, e selecione _'Command Palette...'_
 - Digite _'Package Control: Install Package'_ e aperte Enter.
   - Um novo menu irá aparecer depois de alguns segundos.
-- Busque por _'Looplex_Lawtex_ST3_Plugin_, e aperte Enter.
+- Busque por _'Looplex_Lawtex_For_Sublime_Text_, e aperte Enter.
 - Aguarde a instalação do plugin ser concluída.
   - O progresso de instalação aparecerá na barra de status no lado inferior da janela do Sublime Text 3.
 
@@ -49,7 +51,7 @@ Para validar um arquivo .lawtex, basta abrir o menu _'Looplex'_, e selecionar _'
 
 ### Upload de templates
 
-Para efetuar o upload de templates, abra o menu _'Looplex'_, e selecione _'Upload Template'_. O plugin irá validar a grámatica Lawtex do template, procurar por anexos e arquivos de estilo, e efetuar o upload destes para a plataforma da Looplex após seu login de usuário.
+Para efetuar o upload de templates, abra o menu _'Looplex'_, e selecione _'Upload Template'_ (ou apertando Ctrl+Alt+U). O plugin irá validar a grámatica Lawtex do template, procurar por anexos e arquivos de estilo, e efetuar o upload destes para a plataforma da Looplex após seu login de usuário.
 
 #### Inclusão de elementos de template de arquivos secundários
 
