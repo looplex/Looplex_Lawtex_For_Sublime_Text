@@ -1,5 +1,5 @@
-import sublime
 from Looplex_Lawtex_For_Sublime_Text.lib.Config import Config
+import sublime
 
 class Upload_lawtex_template():
 
