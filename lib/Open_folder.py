@@ -1,6 +1,6 @@
-import sublime
-import os
 from Looplex_Lawtex_For_Sublime_Text.lib.Config import Config
+import os
+import sublime
 
 class Open_folder() :
 

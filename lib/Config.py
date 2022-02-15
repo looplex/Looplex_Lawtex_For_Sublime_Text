@@ -1,7 +1,7 @@
+import os
 import sublime
 import subprocess
 import re
-import os
 
 class Config:
 

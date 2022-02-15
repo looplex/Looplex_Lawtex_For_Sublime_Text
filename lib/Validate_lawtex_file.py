@@ -1,6 +1,6 @@
-import sublime
-import re
 from Looplex_Lawtex_For_Sublime_Text.lib.Config import Config
+import re
+import sublime
 
 class Validate_lawtex_file() :
 
