@@ -4,7 +4,6 @@ from Looplex_Lawtex_For_Sublime_Text.lib.Config import Config
 class Upload_lawtex_template():
 
     def __init__(self, view):
-
         self.view = view
 
     def upload(self) :

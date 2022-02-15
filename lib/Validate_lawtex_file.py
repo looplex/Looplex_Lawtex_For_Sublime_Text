@@ -5,7 +5,6 @@ from Looplex_Lawtex_For_Sublime_Text.lib.Config import Config
 class Validate_lawtex_file() :
 
     def __init__(self, view) :
-
         self.view = view
         self.view.erase_regions('LawtexSyntaxErrorHighlightListener')
 
