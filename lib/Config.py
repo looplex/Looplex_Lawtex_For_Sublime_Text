@@ -6,7 +6,6 @@ import os
 class Config:
 
     pluginName = 'Looplex_Lawtex_For_Sublime_Text'
-
     pluginJar = 'looplex_lawtex_plugin-1.5.3.jar'
 
     mainDataFolder = 'Looplex_Lawtex_Plugin'

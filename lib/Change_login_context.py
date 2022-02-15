@@ -4,7 +4,6 @@ from Looplex_Lawtex_For_Sublime_Text.lib.Config import Config
 class Change_login_context() :
 
     def __init__(self, view) :
-        
         self.view = view
 
     def changeContext(self) :
