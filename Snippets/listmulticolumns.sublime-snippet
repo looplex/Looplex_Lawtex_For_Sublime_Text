@@ -2,8 +2,8 @@
 	<content><![CDATA[
 ${1:*}list[${2:AliasList}] {
 	fields = {${3:"Key1"}, ${4:"Key2"}}
-	options = (${56:{"Option1a","Option2a"}}, ${6:{"Option1b","Option2b"}})
-	type = "String"
+	options = (${5:{"Option1a","Option2a"}}, ${6:{"Option1b","Option2b"}})
+	type = "${7:String}"
 }
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
