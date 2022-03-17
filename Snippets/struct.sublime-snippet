@@ -1,11 +1,11 @@
 <snippet>
 	<content><![CDATA[
 ${1:*}struct[${2:StructAlias}] {
-	name = "${5:...}"
-	request = "${6:...}"
+	name = "${3:...}"
+	request = "${4:...}"
 	fields {
-		${7:+|&|-}[${8:fieldAlias}] : ${9:String|List|Integer|Real|Currency|Boolean|Date|Time} { 
-			name = "${10:...}"
+		${5:+|&|-}[${6:fieldAlias}] : ${7:String|List|Integer|Real|Currency|Boolean|Date|Time} {
+			name = "${8:...}"
 		}
 	}
 }
