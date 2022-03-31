@@ -6,7 +6,7 @@ import re
 class Config:
 
     pluginName = 'Looplex_Lawtex_For_Sublime_Text'
-    pluginJar = 'looplex_lawtex_plugin-1.5.7.jar'
+    pluginJar = 'looplex_lawtex_plugin-1.5.8.jar'
 
     mainDataFolder = 'Looplex_Lawtex_Plugin'
     logsDataSubFolder = 'logs'
