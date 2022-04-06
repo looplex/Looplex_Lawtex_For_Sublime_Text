@@ -7,6 +7,7 @@ class Config:
 
     pluginName = 'Looplex_Lawtex_For_Sublime_Text'
     pluginJar = 'looplex_lawtex_plugin-1.5.8.jar'
+    insightJarFilename = 'applicationinsights-agent-3.2.7.jar'
 
     mainDataFolder = 'Looplex_Lawtex_Plugin'
     logsDataSubFolder = 'logs'
@@ -37,16 +38,18 @@ class Config:
     @staticmethod
     def run_jar_dependency_in_background(context) :
 
+        insights_jar_filepath = Config.retrieve_insights_jar_dependency_filepath()
+
         if sublime.platform() == "windows":
             CREATE_NO_WINDOW = 0x08000000
             context = context.replace("\\", "\\\\")
             win_jar_filepath = Config.retrieve_jar_dependency_filepath( "windows" )
             win_jre_filepath = Config.retrieve_jre_dependency_filepath( "windows" )
-            subprocess.Popen([ win_jre_filepath, '-jar', win_jar_filepath, context ], creationflags = CREATE_NO_WINDOW )
+            subprocess.Popen([ win_jre_filepath, '-javaagent:' + insights_jar_filepath, '-jar', win_jar_filepath, context ], creationflags = CREATE_NO_WINDOW )
 
         else :
             linux_jar_filepath = Config.retrieve_jar_dependency_filepath( "linux" )
-            subprocess.Popen([ "java", "-jar", linux_jar_filepath, context ])
+            subprocess.Popen([ "java", '-javaagent:' + insights_jar_filepath, "-jar", linux_jar_filepath, context ])
 
     @staticmethod
     def retrieve_jar_dependency_filepath( os_name ) :
@@ -57,6 +60,11 @@ class Config:
     def retrieve_jre_dependency_filepath( os_name ) :
 
         return os.path.join(sublime.packages_path(), Config.pluginName, 'jre', os_name, 'bin', 'java.exe')
+
+    @staticmethod
+    def retrieve_insights_jar_dependency_filepath() :
+
+        return os.path.join(sublime.packages_path(), Config.pluginName, 'azure-insights', Config.insightJarFilename)
 
     def retrieve_logs_folder_linux() :
 
