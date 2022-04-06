@@ -1,0 +1,15 @@
+{
+  "connectionString": "InstrumentationKey=f8b1af61-a6cf-4f19-b81f-0719f7a80680;IngestionEndpoint=https://westus2-2.in.applicationinsights.azure.com/",
+  "jmxMetrics": [
+    {
+      "name": "JVM uptime (millis)",
+      "objectName": "java.lang:type=Runtime",
+      "attribute": "Uptime"
+    },
+    {
+      "name": "MetaSpace Used",
+      "objectName": "java.lang:type=MemoryPool,name=Metaspace",
+      "attribute": "Usage.used"
+    }
+  ]
+}
