@@ -45,11 +45,13 @@ class Config:
             context = context.replace("\\", "\\\\")
             win_jar_filepath = Config.retrieve_jar_dependency_filepath( "windows" )
             win_jre_filepath = Config.retrieve_jre_dependency_filepath( "windows" )
-            subprocess.Popen([ win_jre_filepath, '-javaagent:' + insights_jar_filepath, '-jar', win_jar_filepath, context ], creationflags = CREATE_NO_WINDOW )
+            winJavaagent = '-javaagent:' + insights_jar_filepath
+            subprocess.Popen([ win_jre_filepath, winJavaagent, '-jar', win_jar_filepath, context ], creationflags = CREATE_NO_WINDOW )
 
         else :
             linux_jar_filepath = Config.retrieve_jar_dependency_filepath( "linux" )
-            subprocess.Popen([ "java", '-javaagent:' + insights_jar_filepath, "-jar", linux_jar_filepath, context ])
+            linuxJavaagent = '-javaagent:' + insights_jar_filepath
+            subprocess.Popen([ "java", linuxJavaagent, "-jar", linux_jar_filepath, context ])
 
     @staticmethod
     def retrieve_jar_dependency_filepath( os_name ) :
