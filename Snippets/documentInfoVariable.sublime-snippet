@@ -2,7 +2,7 @@
   <content><![CDATA[
 <${1:strReceiver}>.documentInfo(<${2:doc}>, \"pdf\")
 ]]></content>
-  <tabTrigger>documentInfo(<doc>)</tabTrigger>
+  <tabTrigger>documentInfo(&lt;doc&gt;)</tabTrigger>
   <description>Tube documentInfo com variável</description>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope >source.python</scope > -->
