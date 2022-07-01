@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+setDocumentName(\"${1:Document - }\" & <${2:string}>)
+]]></content>
+  <tabTrigger>setDocumentName()</tabTrigger>
+  <description>Tube setDocumentName</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

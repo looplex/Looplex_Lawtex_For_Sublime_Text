@@ -1,0 +1,28 @@
+<snippet>
+  <content><![CDATA[
+branch[BRC_GroupBy] {
+	declarations {
+		struct[STR_GroupExample] {
+			fields {
+				+[id]: String,
+				+[list]: List(\"A\",\"B\",\"C\") {atomic = true}
+			}
+		},
+		+|mtxExample| : Vector[STR_GroupExample],
+		-|mtxGrouped| : Vector[Struct] {
+			fields {
+				+[key] : String,
+				+|values| : Vector[STR_GroupExample]
+			}
+		}
+	}
+	operations {
+		|mtxGrouped| = |mtxExample|.groupBy(\"list\")
+	}
+}
+]]></content>
+  <tabTrigger>branch[BRC_GroupBy]</tabTrigger>
+  <description>Branch com o tube GroupBy</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

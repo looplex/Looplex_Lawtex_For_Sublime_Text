@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+EXISTS <${1:str}> IN |${2:mtx}| : <${1:str}${3|.bool>,.int> == 1, .string> == \"true\"|}>
+]]></content>
+  <tabTrigger>EXISTS, exists</tabTrigger>
+  <description>Operand EXISTS returns a Boolean value</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

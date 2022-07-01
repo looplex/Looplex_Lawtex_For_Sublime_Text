@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+firstLower(${2:<${1:string}>})
+]]></content>
+  <tabTrigger>firstLower()</tabTrigger>
+  <description>Tube firstLower</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

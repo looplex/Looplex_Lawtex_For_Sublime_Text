@@ -1,9 +1,9 @@
 <snippet>
-	<content><![CDATA[
-${1:<varlist>}.getByKey(${2:"KeyStringOuNumero"})
+  <content><![CDATA[
+${2:<${1:multiColumnList}>.}getByKey(${4:\"}${3:key}${4:\"})
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>getByKey</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+  <tabTrigger>getByKey()</tabTrigger>
+  <description>Tube getByKey</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
 </snippet>

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+length(${2:<${1:string}>})
+]]></content>
+  <tabTrigger>length()</tabTrigger>
+  <description>Tube length</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

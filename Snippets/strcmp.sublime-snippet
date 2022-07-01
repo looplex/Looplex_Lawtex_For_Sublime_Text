@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+strcmp(${2:<${1:string1}>}, ${4:<${3:string2}>})
+]]></content>
+  <tabTrigger>strcmp()</tabTrigger>
+  <description>Tube strcmp</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

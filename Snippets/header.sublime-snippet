@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+header(\"${1|PRIMARY,FIRST_PAGE,EVEN_PAGE|}\", ${2|\"fileName.png\",\"The quick brown fox jumps over the lazy dog\"|}, \"${3|left,center,right|}\", ${4|\"5cm\",\"50mm\",\"2in\",\"20px\",\"15pt\",\"100%\",null|}, ${5:height}) 
+]]></content>
+  <tabTrigger>header()</tabTrigger>
+  <description>Tube header</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

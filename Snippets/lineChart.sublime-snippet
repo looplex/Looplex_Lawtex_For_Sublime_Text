@@ -1,0 +1,29 @@
+<snippet>
+  <content><![CDATA[
+branch[BRC_LineChart] {
+	declarations {
+		struct[ValuesLine] {
+			fields {
+				+[key]: String,
+				+[value]: Real
+			}
+		},
+		+<${1:strMultiline}> : struct[MultiLineChart] {
+			fields {
+				+[xlabel]: String,
+				+[ylabel]: String,
+				+|values1|: Vector[*ValuesLine],
+				${0:+|valuesN| : Vector[*ValuesLine]}
+			}
+		}
+	}
+	operations {
+		lineChart(<${1:strMultiline}>, ${2:<integer>}, ${3:height}),
+	}
+}
+]]></content>
+  <tabTrigger>branch[BRC_LineChart]</tabTrigger>
+  <description>Branch com o tube lineChart</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

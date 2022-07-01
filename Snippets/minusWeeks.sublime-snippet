@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+minusWeeks(<${1:date}>, <${2:integer}>)
+]]></content>
+  <tabTrigger>minusWeeks()</tabTrigger>
+  <description>Tube minusWeeks</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

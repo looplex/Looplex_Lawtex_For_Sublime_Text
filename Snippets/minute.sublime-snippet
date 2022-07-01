@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+minute({${1|now(),\"10:30\",\"10:30:59\", |})
+]]></content>
+  <tabTrigger>minute()</tabTrigger>
+  <description>Tube minute</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

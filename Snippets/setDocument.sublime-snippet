@@ -1,0 +1,29 @@
+<snippet>
+  <content><![CDATA[
+branch[BRC_SetDocument] {
+	name = \"Novo documento\"
+	index = true
+	declarations {
+		+<criarDocumento> : Booelan where (\"Button\") {name = \"Criar\"},
+		+<brcConfig> : *STR_SetDocumentConfig {name = \"Configurações\"}
+	}
+	operations {
+		<brcConfig.environment>.default = \"${1|testing,staging,sandbox,produção|}\",
+		<brcConfig.name>.default = \"${2:docName}\",
+		<brcConfig.templateName>.default = \"TEMP_${3:Template_Name}\",
+		<brcConfig.email>.default = \"${4:email}@looplex.com.br\",
+		<brcConfig.password>.default = \"${5:password}\",
+		if (<criarDocumento>) {
+			use *FUNC_SetDocument where (
+				<config> : <brcConfig>,
+				<obj> = {}
+			)
+		}
+	}
+}
+]]></content>
+  <tabTrigger>branch[BRC_SetDocument]</tabTrigger>
+  <description>branch[BRC_SetDocument]</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

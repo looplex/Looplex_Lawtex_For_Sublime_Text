@@ -1,0 +1,22 @@
+<snippet>
+  <content><![CDATA[
+branch[BRC_PieChart] {
+	declarations {
+		struct[PieChart] {
+			fields {
+				+[key]: String,
+				+[value]: Real
+			}
+		},
+		+|${1:mtxPie}| : Vector[PieChart]
+	}
+	operations {
+		pieChart(|${1:mtxPie}|, ${2:<integer>}, ${33:height})
+	}
+}
+]]></content>
+  <tabTrigger>branch[BRC_PieChart]</tabTrigger>
+  <description>Branch com o tube pieChart</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

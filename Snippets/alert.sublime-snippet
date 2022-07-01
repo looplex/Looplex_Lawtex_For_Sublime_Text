@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<${1:var}>.alert()
+]]></content>
+  <tabTrigger>alert()</tabTrigger>
+  <description>Tube alert</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

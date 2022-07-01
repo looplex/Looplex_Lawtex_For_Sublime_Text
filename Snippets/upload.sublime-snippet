@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+upload(\"${1:cardName}\", \"${2:fileName.png}\", \"${3:request}\", \"${4:+}\"${5:, \"label}\")
+]]></content>
+  <tabTrigger>upload()</tabTrigger>
+  <description>Uploads files</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

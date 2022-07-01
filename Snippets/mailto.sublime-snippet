@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+mailto(${1|<stringMail>,\"ej@looplex.com.br\"|})
+]]></content>
+  <tabTrigger>mailto()</tabTrigger>
+  <description>Tube mailto</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

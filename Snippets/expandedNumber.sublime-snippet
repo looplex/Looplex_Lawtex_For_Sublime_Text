@@ -1,9 +1,9 @@
 <snippet>
-	<content><![CDATA[
-expandedNumber(<${1:valueInNumbers}>)
+  <content><![CDATA[
+expandedNumber(${2:<${1:number}>}, \"${3|F,M|}\", \"${4:nomeDoInteiro}\",\"${5|F,M|}\", \"${6:nomeDoDecimal}\", ${7|2,<numDigitos>|})
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>expandedNumber</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+  <tabTrigger>expandedNumber()</tabTrigger>
+  <description>Tube expandedNumber</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
 </snippet>

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+max({${2:|${1:vectNumbers}|})
+]]></content>
+  <tabTrigger>max()</tabTrigger>
+  <description>Tube max</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

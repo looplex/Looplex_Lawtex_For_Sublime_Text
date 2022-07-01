@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+|${1:mtx}|.orderBy(\"${2:fieldAlias1}\"${3:, \"fiedAliasN\"})
+]]></content>
+  <tabTrigger>orderBy()</tabTrigger>
+  <description>Tube orderBy</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

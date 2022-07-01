@@ -1,0 +1,41 @@
+<snippet>
+  <content><![CDATA[
+branch[BRC_JSBox] {
+	declarations {
+		-<res> : Struct {
+			fields {
+				-[status]: String,
+				-[message]: Struct {
+					fields {
+						// Em caso de \"FAILURE\"
+						-[name] : String,
+						-[message]: String,
+						-[stack] : String
+						// Em caso de \"SUCCESS\"
+						//Aqui o usuário pode declarar as variáveis ou estruturas que quiser e, quando for programar o código em JS utilizar os mesmos nomes.
+						$0
+					}
+				}
+			}
+		}
+		+<req> : Struct {
+			fields {
+				+[declarations] : Struct {
+					fields {
+						+[valores] : String
+					}
+				},
+				+[operations] : String
+			}
+		}
+	}
+	operations {
+		<res>.APIPost(<req>, null, \"https://looplex365.azurewebsites.net/api/jsbox\")
+	}
+}
+]]></content>
+  <tabTrigger>branch[BRC_JSBox]</tabTrigger>
+  <description>Branch com o tube JSBox</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

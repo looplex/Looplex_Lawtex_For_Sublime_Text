@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+clearStyle(${1|<htmlString>,\"<html style='font-size: 21pt'></html>\"|}, ${2|<cssProperty>,\"font-size\"|})
+]]></content>
+  <tabTrigger>clearStyle()</tabTrigger>
+  <description>Tube clearStyle</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

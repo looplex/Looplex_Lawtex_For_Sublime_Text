@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+substring(${2:<${1:\$TM_SELECTED_TEXT}>}, ${3:intLower}${4:,${5:intUpper}}})
+]]></content>
+  <tabTrigger>substring()</tabTrigger>
+  <description>Tube substring with selection</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

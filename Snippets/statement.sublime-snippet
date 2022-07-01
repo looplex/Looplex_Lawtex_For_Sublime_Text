@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+statement {
+	audience = ${1:\"QUEM USARÁ ESSE TEMPLATE?\"}
+	components = ${2:\"QUAIS OUTROS TEMPLATES/API/INTEGRAÇÕES SÃO USADOS NESSE TEMPLATE?\"}
+	functionalities = ${3:\"QUAL O ESCOPO DESSE TEMPLATE?\"}
+	inputs = ${4:\"CONTEÚDO NECESSÁRIO PARA ALIMENTAR ESSE TEMPLATE!\"}
+	overview = ${5:\"QUAL O CONTEÚDO CONTEMPLADO NESSE TEMPLATE?\"}
+	warnings {
+		${6:\"AVISOS - mesma formatação de erro/alert\"}
+	}
+}
+]]></content>
+  <tabTrigger>statement{}</tabTrigger>
+  <description>Statement section</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

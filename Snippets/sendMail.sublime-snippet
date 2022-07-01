@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+sendMail(${1:\"emailDestino\"},${2:\"assunto\"},${3:\"corpo\"},${4:\"docx/pdf\"})
+]]></content>
+  <tabTrigger>sendMail()</tabTrigger>
+  <description>sendMail tube</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

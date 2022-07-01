@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+APIPost(<${1:body}>, ${2|null,{<header>}|}, \"${3:APIinfo}\", \"${4:endpoint}\", ${5|null,<mappingTranslator>|})
+]]></content>
+  <tabTrigger>APIPost()</tabTrigger>
+  <description>Tube APIPost 1 body</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

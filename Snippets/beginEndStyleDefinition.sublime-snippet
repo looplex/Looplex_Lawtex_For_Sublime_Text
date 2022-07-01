@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+beginStyleDefinition(${2:\"${1:cssString}\"}),
+	...
+endStyleDefinition()
+]]></content>
+  <tabTrigger>beginStyleDefinition()</tabTrigger>
+  <description>Tubes para estilo</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

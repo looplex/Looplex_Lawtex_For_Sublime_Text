@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+${2:<${1:string}>}.replace(${3|<stringOldPattern>,\"Old\"|}, ${4|<stringNewPattern>,\"new\"|})
+]]></content>
+  <tabTrigger>replace()</tabTrigger>
+  <description>Tube replace</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

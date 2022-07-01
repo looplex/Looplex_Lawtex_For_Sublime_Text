@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+citation(${1:\"}\$TM_SELECTED_TEXT${1:\"})
+]]></content>
+  <tabTrigger>citation()</tabTrigger>
+  <description>Tube citation with selected content</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

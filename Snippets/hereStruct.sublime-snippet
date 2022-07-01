@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+<here> : struct[Here] {
+	fields {
+		+[city] : String,
+		+[state] : String,
+		+[country] : String
+	}
+}
+]]></content>
+  <tabTrigger>here : struct</tabTrigger>
+  <description>here struct</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+${2:<${1:multiColumnList}>.}mat2vect(${4:|}${3:mtxReceiver}${4:|})
+]]></content>
+  <tabTrigger>mat2vect()</tabTrigger>
+  <description>Tube mat2vect</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

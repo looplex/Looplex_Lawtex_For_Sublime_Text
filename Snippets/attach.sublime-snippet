@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+attach(${1|\"fileName.ext\",<fileVar>|}, \"${2|left,center,right|}\", ${3|\"altText\",null|}, ${4|\"cm\",\"mm\",\"in\",\"px\",\"pt\",\"%\",null|}, ${5|\"cm\",\"mm\",\"in\",\"px\",\"pt\",\"%\",null|}, ${6|\"top\",\"bottom\",null|})
+]]></content>
+  <tabTrigger>attach()</tabTrigger>
+  <description>Attaches files</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<receiver>.ingest(${2:\"${1:file}.xlsx\"}, \"${3:A1:F*}\", \"${4:Nome da aba}\", ${5|true,false|}, ${0:{\"fieldDestino1\", \"fieldDestino2\", \"fieldDestinoN\"}})
+]]></content>
+  <tabTrigger>ingest()</tabTrigger>
+  <description>Tube ingest</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

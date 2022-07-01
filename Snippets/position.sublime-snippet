@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+position(|${1:mtx}|, <${2:elem}>)
+]]></content>
+  <tabTrigger>position()</tabTrigger>
+  <description>Tube position</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

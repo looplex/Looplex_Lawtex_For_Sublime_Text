@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<${1:strReceiver}>.documentInfo(${2|\"pdf\",\"Nome do Arquivo WebLang\"|})
+]]></content>
+  <tabTrigger>documentInfo()</tabTrigger>
+  <description>Tube documentInfo com documento</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

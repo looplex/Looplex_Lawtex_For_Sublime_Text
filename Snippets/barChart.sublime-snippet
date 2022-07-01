@@ -1,0 +1,25 @@
+<snippet>
+  <content><![CDATA[
+branch[BRC_BarChart] {
+	declarations {
+		struct[BarChart] {
+			fields {
+				+[key]: String,
+				+[altura]: Real,
+				+[largura]: Real,
+				+[peso]: Real,
+				+[força]: Real
+			}
+		},
+		+|${1:mtxBar}| : Vector[BarChart]",
+	}",
+	operations {
+		barChart(|${1:mtxBar}|, ${2:<integer>}, ${33:height})
+	}
+}
+]]></content>
+  <tabTrigger>branch[BRC_BarChart]</tabTrigger>
+  <description>Branch com o tube barChart</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

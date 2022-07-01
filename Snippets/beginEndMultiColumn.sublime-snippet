@@ -1,0 +1,20 @@
+<snippet>
+  <content><![CDATA[
+beginMultiColumn(${2:<${1:numCols}>}, \"${3|5cm,50mm,2in,20px,15pt,100%|}\"),
+	print {
+		[version] = \"1ª Coluna\"
+		...
+		[version] = \"Nª Coluna\"
+	},
+	print {
+		[version] = \"1ª Coluna\"
+		...
+		[version] = \"Nª Coluna\"
+	},
+endMultiColumn()
+]]></content>
+  <tabTrigger>beginMultiColumn()</tabTrigger>
+  <description>Tubes para multicoluna</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

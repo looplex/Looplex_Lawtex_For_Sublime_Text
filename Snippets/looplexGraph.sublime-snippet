@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
+use *FUNC_LooplexGraph where (
+	<subscription_key> = \"${1:5656e9ae234149eb8ad6896146fbbb65}\"
+	<method> = \"${2|jsbox,headless-surf,mustache-render,office-render|}\"
+	<payload> : <${3:payload}>
+	<response> : <${4:response}>
+)
+]]></content>
+  <tabTrigger>use graph</tabTrigger>
+  <description>Uso do branch LooplexGraph</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+str2date(${1|today(),\"01/01/2001\"|})
+]]></content>
+  <tabTrigger>str2date()</tabTrigger>
+  <description>Turns String to Date.</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+before(<${1:dateTimeBefore}>, <${2:dateTimeBase}>)
+]]></content>
+  <tabTrigger>before()</tabTrigger>
+  <description>Tube before</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

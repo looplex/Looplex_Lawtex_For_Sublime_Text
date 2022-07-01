@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+${2:<${1:multiColumnList}>.}removeByKey(${4:\"}${3:key}${4:\"}, ${6:\"}${5:value}${6:\"})
+]]></content>
+  <tabTrigger>removeByKey()</tabTrigger>
+  <description>Tube removeByKey</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

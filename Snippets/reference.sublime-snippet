@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+print idReference(${2:\"${1:id}\"}, ${4:\"${3:Item 1}\"}) & \" será citado abaixo\",
+...
+print reference(${2:\"${1:id}\"}) & \" foi citado acima\"
+]]></content>
+  <tabTrigger>reference()</tabTrigger>
+  <description>Tubes para referência cruzada</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+link(\"${1:NomeSalvo}\",${2:<file>})
+]]></content>
+  <tabTrigger>link()</tabTrigger>
+  <description>Tube link</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

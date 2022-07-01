@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+fontSize(${2:\"}${1:\$TM_SELECTED_TEXT}${2:\"}, \"${3:12}pt\")
+]]></content>
+  <tabTrigger>fontSize()</tabTrigger>
+  <description>Tube fontSize with selected content</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

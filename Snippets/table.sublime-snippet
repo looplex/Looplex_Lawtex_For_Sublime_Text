@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+table(|${1:mtx}|, ${2|\"vertical\",\"horizontal\"|}, ${3|\"group\",\"collapse\"|}, ${4|\"normal\",\"nowrap\"|}, ${5:\"#efefef\"}, ${6:\"#efefef\"}, ${7|1,<integerBorderWidth>|}, ${8:\"#000000\"})
+]]></content>
+  <tabTrigger>table()</tabTrigger>
+  <description>Tube table</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

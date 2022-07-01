@@ -1,0 +1,19 @@
+<snippet>
+  <content><![CDATA[
+<mySelf> : struct[MySelf] {
+	fields {
+		+[userId]  : Integer,
+		+[userName] : String,
+		+[corpName] : String,
+		+[corpId] : Integer,
+		+[isTrial] : Boolean,
+		+[userMail] : String,
+		+[corpMail] : String
+	}
+}
+]]></content>
+  <tabTrigger>mySelf : struct</tabTrigger>
+  <description>mySelf struct</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

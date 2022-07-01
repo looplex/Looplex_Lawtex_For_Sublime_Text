@@ -1,0 +1,14 @@
+<snippet>
+  <content><![CDATA[
++<${1:execute}> : Boolean where (\"Button\") {
+	name = \"${2:My Button}\"
+	request = \"${3:My Button}\"
+	help = \"Após clicar em \\\"EXCEUTAR\\\", o botão muda para \\\"AGUARDANDO SALVAMENTO\\\" até que você salve o card.
+	}
+}
+]]></content>
+  <tabTrigger>button : Boolean</tabTrigger>
+  <description>Button variable</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

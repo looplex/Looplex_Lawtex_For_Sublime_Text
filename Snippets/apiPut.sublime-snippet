@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+APIPut(<${1:body}>, \"${2:APIinfo}\", \"${3:endpoint}\")
+]]></content>
+  <tabTrigger>APIPut()</tabTrigger>
+  <description>Tube APIPut</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>
