@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+${2:|${1:mtx}|.}remove(${3|<integer>,0|})
+]]></content>
+  <tabTrigger>remove()</tabTrigger>
+  <description>Tube remove</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

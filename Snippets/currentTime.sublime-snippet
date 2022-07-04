@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+curTime({${1|\"HH:mm:ss\",\"HH:mm\",\"mm:ss\",\"HH\",\"mm\",\"ss\"|})
+]]></content>
+  <tabTrigger>curTime()</tabTrigger>
+  <description>Tube curTime</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

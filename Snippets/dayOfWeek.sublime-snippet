@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+dayOfWeek({${1|today(),\"31/12/2000\", |})
+]]></content>
+  <tabTrigger>dayOfWeek()</tabTrigger>
+  <description>Tube dayOfWeek</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+atomic = ${1|true,false|}
+]]></content>
+  <tabTrigger>atomic = </tabTrigger>
+  <description>Atomic with option list</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

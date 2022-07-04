@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<${1:doc}>.latest()
+]]></content>
+  <tabTrigger>latest()</tabTrigger>
+  <description>Tube latest</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

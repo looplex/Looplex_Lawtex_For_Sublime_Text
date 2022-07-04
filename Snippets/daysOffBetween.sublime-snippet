@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+daysOffBetween(<${1:dateBefore}>, <${2:dateAfter}>, ${3|\"São Paulo\",\"SP\",\"São Paulo - SP\", |})
+]]></content>
+  <tabTrigger>daysOffBetween()</tabTrigger>
+  <description>Tube daysOffBetween</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

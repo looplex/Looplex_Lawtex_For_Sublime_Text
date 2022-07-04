@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+separator = \"%f${1:,} %s${1:,} %p${2: e} %l${3:.}\"
+]]></content>
+  <tabTrigger>separator =</tabTrigger>
+  <description>Standard separator</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+${2:<${1:string}>}.indexOf(${3|<stringPattern>,\"pattern\"|})
+]]></content>
+  <tabTrigger>indexOf()</tabTrigger>
+  <description>Tube indexOf</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

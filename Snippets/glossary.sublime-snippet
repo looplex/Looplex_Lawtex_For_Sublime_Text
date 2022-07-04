@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+glossary(${1|<stringKey>,\"Termo\"|}, ${2|<stringDescription>,\"Description\", |}\")",
+...",
+makeGlossary()
+]]></content>
+  <tabTrigger>glossary()</tabTrigger>
+  <description>Tubes para glossary</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

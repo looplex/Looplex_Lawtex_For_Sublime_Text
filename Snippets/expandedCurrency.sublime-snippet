@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+expandedCurrency(${2:<${1:value}>}, \"${3|BRL,USD,EUR|}\")
+]]></content>
+  <tabTrigger>expandedCurrency()</tabTrigger>
+  <description>Tube expandedCurrency</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

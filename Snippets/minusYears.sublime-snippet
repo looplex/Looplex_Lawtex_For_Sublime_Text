@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+minusYears(<${1:date}>, <${2:integer}>)
+]]></content>
+  <tabTrigger>minusYears()</tabTrigger>
+  <description>Tube minusYears</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

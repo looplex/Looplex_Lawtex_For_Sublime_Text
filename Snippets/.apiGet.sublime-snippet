@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<${1:bodyReceiver}>.APIGet(<${2:bodySender}>, ${3|null,{<header>}|}, \"${4:APIinfo}\", \"${5:endpoint}\", ${6|null,<mappingTranslator>|})
+]]></content>
+  <tabTrigger>.APIGet()</tabTrigger>
+  <description>Tube APIGet 2 body</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

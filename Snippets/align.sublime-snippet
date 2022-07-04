@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+align(${2:\"}${1:\$TM_SELECTED_TEXT}${2:\"}, \"${3|left,center,right|}\")
+]]></content>
+  <tabTrigger>align()</tabTrigger>
+  <description>Tube align with selected content</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

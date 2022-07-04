@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+cumSum(|${1:mtx}|, \"${2:fieldAlias}\")
+]]></content>
+  <tabTrigger>cumSum()</tabTrigger>
+  <description>Tube cumSum</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

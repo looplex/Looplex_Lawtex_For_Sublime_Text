@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+|${2:mtxSender}|.filter(${3|\"value\" IN [this.list],[this.boolean]|})
+]]></content>
+  <tabTrigger>filter()</tabTrigger>
+  <description>Tube filter with matrix placeholder</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

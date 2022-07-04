@@ -3,7 +3,8 @@
   "packages": [{
     "name": "Looplex Lawtex For Sublime Text",
     "description": "Plugin for the Sublime Text editor to aid in creating Lawtex documents for the Looplex platform.",
-    "author": "looplex",
+    "author": "Looplex",
+    "details": "https://github.com/looplex/Looplex_Lawtex_ST3_Plugin",
     "homepage": "https://github.com/looplex/Looplex_Lawtex_ST3_Plugin",
     "issues": "https://github.com/looplex/Looplex_Lawtex_ST3_Plugin/issues"
   }]

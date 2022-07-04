@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+${2:<${1:var}>}.unlock()
+]]></content>
+  <tabTrigger>unlock()</tabTrigger>
+  <description>Tube unlock</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

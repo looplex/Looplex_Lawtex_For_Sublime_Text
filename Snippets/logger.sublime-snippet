@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+logger(${3:\"${1:log-}\" & <${2:string}>})
+]]></content>
+  <tabTrigger>logger()</tabTrigger>
+  <description>Tube logger</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

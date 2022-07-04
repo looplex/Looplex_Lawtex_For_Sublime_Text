@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+expandedOrdinal(${2:<${1:integer}>}, \"${3|F,M|}\", \"${4|singular,plural|}\")
+]]></content>
+  <tabTrigger>expandedOrdinal()</tabTrigger>
+  <description>Tube expandedOrdinal</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

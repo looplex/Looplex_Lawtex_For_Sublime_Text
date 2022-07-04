@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+${2:|${1:mtxWithId}|.}vect2str(\"%f${3:,} %s${3:,} %p${3:,} e %l${4:.}\")
+]]></content>
+  <tabTrigger>vect2str()</tabTrigger>
+  <description>Turns Atomic Vector to String.</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+str2num(${2:<${1:string}>})
+]]></content>
+  <tabTrigger>str2num()</tabTrigger>
+  <description>Turns String to Date.</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

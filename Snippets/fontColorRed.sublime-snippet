@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+fontColor(${1:\"}\$TM_SELECTED_TEXT${1:\"}, \"#FF0000\")
+]]></content>
+  <tabTrigger>fontColorRed()</tabTrigger>
+  <description>Tube fontColor in red with selected content</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

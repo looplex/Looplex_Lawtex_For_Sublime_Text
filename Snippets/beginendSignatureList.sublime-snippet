@@ -1,12 +1,10 @@
 <snippet>
-	<content><![CDATA[
-beginSignatureList("Testemunhas", 2, "left"),
-sign("nome:\nRG:"),
-sign("nome:\nRG:"),
+  <content><![CDATA[
+beginSignatureList(${2:\"${1:Testemunhas:}\"}, ${4:<${3:numCols}>},\"${5|left,center,right|}\"),
 endSignatureList()
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>beginEndSignatureList</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+  <tabTrigger>beginSignatureList()</tabTrigger>
+  <description>Tubes para assinaturas</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
 </snippet>

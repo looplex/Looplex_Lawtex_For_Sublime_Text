@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+decimalFormat(${2:<${1:integer}>}, ${3|1000,<decimalSeparator>, |})
+]]></content>
+  <tabTrigger>decimalFormat()</tabTrigger>
+  <description>Tube decimalFormat</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

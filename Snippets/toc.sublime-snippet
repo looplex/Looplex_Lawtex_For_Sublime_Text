@@ -1,0 +1,15 @@
+<snippet>
+  <content><![CDATA[
+branch[TOC_$1] {
+	name = \"${2:sectionName}\"
+	index = true
+	operations {
+		$3
+	}
+}
+]]></content>
+  <tabTrigger>branch[TOC]</tabTrigger>
+  <description>Table of contents</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

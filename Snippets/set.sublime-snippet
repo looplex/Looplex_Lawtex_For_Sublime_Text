@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+${2:|${1:mtx}|.}set(${4:<${3:int}>},${6:<${5:str}>})
+]]></content>
+  <tabTrigger>set()</tabTrigger>
+  <description>Tube set</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

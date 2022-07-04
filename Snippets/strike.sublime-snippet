@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+strike(${1:\"}\$TM_SELECTED_TEXT${1:\"})
+]]></content>
+  <tabTrigger>strike()</tabTrigger>
+  <description>Tube strike with selected content</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

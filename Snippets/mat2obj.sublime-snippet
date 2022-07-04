@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+${2:<${1:multiColumnList}>.}mat2obj(${4:<${3:strReceiver}>})
+]]></content>
+  <tabTrigger>mat2obj()</tabTrigger>
+  <description>Tube mat2obj</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

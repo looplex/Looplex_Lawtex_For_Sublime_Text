@@ -1,0 +1,11 @@
+<snippet>
+  <content><![CDATA[
+foreach(<i> IN [0:|${1:vect}|.size()-1]) where (separator = \"%f; %s; %p; e %l.\") {
+	print \"...\" & |${1:vect}{<i>}|
+}
+]]></content>
+  <tabTrigger>foreach</tabTrigger>
+  <description>Foreach with range</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

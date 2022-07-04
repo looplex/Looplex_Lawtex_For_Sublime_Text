@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+|${1:vectAtomic}|.sort(${2|\"asc\",\"desc\"|})
+]]></content>
+  <tabTrigger>sort()</tabTrigger>
+  <description>Tube sort</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

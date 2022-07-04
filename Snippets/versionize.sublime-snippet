@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+versionize(${3|\",<|}${1:version1}${4|\",>|}, ${3|\",<|}${2:versionN}${4|\",>|})
+printVersion(${5|<versionNumber>,\"1\"|})
+]]></content>
+  <tabTrigger>versionize()</tabTrigger>
+  <description>Tubes para referência cruzada</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

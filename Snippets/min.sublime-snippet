@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+min({${2:|${1:vectNumbers}|})
+]]></content>
+  <tabTrigger>min()</tabTrigger>
+  <description>Tube min</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

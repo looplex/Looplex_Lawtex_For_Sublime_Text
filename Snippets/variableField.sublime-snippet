@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+${1|+,&,-|}${2|<var>,[field]|} : ${4|String,Integer,Real,Currency,Boolean,Date,Time,Object|} {
+	name = \"${5:string}\"
+	${6|request,default,help|} = \"${5:string}\"
+}
+]]></content>
+  <tabTrigger>variableField</tabTrigger>
+  <description>Variable / Field except it doesn't suck</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

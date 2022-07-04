@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+abs({${1|<number>,-1|})
+]]></content>
+  <tabTrigger>abs()</tabTrigger>
+  <description>Tube abs</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

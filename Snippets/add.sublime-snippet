@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+${2:|${1:mtx}|.}add(${3|<str>,<var>,\"primitives\"|})
+]]></content>
+  <tabTrigger>add()</tabTrigger>
+  <description>Tube add</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

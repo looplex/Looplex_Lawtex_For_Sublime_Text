@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+${2:|${1:mtx}|.}last()
+]]></content>
+  <tabTrigger>last()</tabTrigger>
+  <description>Tube last</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

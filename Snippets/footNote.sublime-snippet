@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+footNote(${2:\"}${1:\$TM_SELECTED_TEXT}${2:\"})
+]]></content>
+  <tabTrigger>footNote()</tabTrigger>
+  <description>Tube footNote with selected content</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

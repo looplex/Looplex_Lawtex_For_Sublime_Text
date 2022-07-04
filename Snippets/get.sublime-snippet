@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+${2:|${1:mtx}|.}get(3|<integer>,0|)
+]]></content>
+  <tabTrigger>get()</tabTrigger>
+  <description>Tube get</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+${2:<${1:str}>}.instanceOf(${3:STR_Type})
+]]></content>
+  <tabTrigger>instanceOf()</tabTrigger>
+  <description>Tube instanceOf</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+isWeekend({${1|today(),\"31/12/2000\",today()|})
+]]></content>
+  <tabTrigger>isWeekend()</tabTrigger>
+  <description>Tube isWeekend</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

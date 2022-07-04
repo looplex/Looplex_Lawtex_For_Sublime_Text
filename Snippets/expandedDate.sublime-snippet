@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+expandedDate(${2:<${1:date}>})
+]]></content>
+  <tabTrigger>expandedDate()</tabTrigger>
+  <description>Tube expandedDate</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

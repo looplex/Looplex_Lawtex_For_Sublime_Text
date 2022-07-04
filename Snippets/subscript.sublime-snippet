@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+subscript(${1:\"}\$TM_SELECTED_TEXT${1:\"})
+]]></content>
+  <tabTrigger>subscript()</tabTrigger>
+  <description>Tube subscript with selected content</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>
